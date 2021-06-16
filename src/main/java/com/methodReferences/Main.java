@@ -6,9 +6,7 @@ public class Main {
 
         Square s = new Square(4);
 
-        Shapes shapes = (Square square) -> {
-            return square.calculateAre();
-        };
+        Shapes shapes = Square::calculateAre;
 
         System.out.println("Area: " + shapes.getArea(s));
 
